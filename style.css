@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(32, 46, 10);
+    font-family: Arial, sans-serif; /* Defina uma fonte padrão para o corpo */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto; /* Reduzi a margem superior em telas menores */
+    flex-direction: column;
+    background-color: rgb(215, 215, 215);
+    max-width: 400px; /* Garante que a largura máxima não exceda a largura da tela */
+    padding: 20px; /* Adicione um espaçamento interno */
+    border-radius: 10px;
+    box-shadow: -12px 12px 40px -12px rgb(0, 0, 0);
+}
+
+.senha {
+    text-align: center;
+    padding: 10px 15px; /* Reduzi o preenchimento */
+    font-size: 18px; /* Reduzi o tamanho da fonte */
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.title {
+    color: black;
+    margin: 20px;
+    font-size: 24px; /* Aumentei o tamanho da fonte */
+}
+
+#idade {
+    text-align: center;
+    padding: 10px 15px; /* Reduzi o preenchimento */
+    font-size: 18px; /* Reduzi o tamanho da fonte */
+    margin: 10px;
+    border-radius: 50px;
+}
+
+#btn {
+    padding: 10px 30px; /* Reduzi a largura do botão */
+    font-size: 1rem; /* Reduzi o tamanho da fonte */
+    background-color: rgb(40, 209, 6);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px auto;
+}
+
+#btn:hover {
+    background-color: rgb(16, 158, 16);
+    color: #fff;
+}
+
+/* Adicione uma regra de mídia query para telas menores */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%; /* Reduz a largura do container em telas menores */
+        margin: 20px auto; /* Aumenta a margem superior em telas menores */
+    }
+
+    .title {
+        font-size: 20px; /* Reduz o tamanho da fonte do título em telas menores */
+    }
+
+    .senha,
+    #idade {
+        font-size: 16px; /* Reduz o tamanho da fonte dos campos em telas menores */
+    }
+
+    #btn {
+        padding: 10px 20px; /* Reduz a largura do botão em telas menores */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte do botão em telas menores */
+    }
+}
